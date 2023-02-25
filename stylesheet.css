@@ -27,8 +27,10 @@ body{
 .list {list-style: none;}
 
 
+
+
 /* mobile style */
-@media screen and (max-width: 767px) {
+@media screen and  (max-width: 767px) {
     
     .container{
     margin-left: auto;
@@ -51,9 +53,9 @@ text-transform: uppercase;
 color: #121212;
 margin-bottom: 32px;}
 }
+
 .location-map{margin-bottom: 32px;}
 
-.location-img{}
 
 
 
@@ -81,6 +83,7 @@ margin-bottom: 12px;}
 
 .location-tel{
 font-family: 'DM Sans';
+font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.28;
@@ -116,11 +119,14 @@ color: #121212;}
     line-height: 1;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #121212;}
+    color: #121212;
+margin-bottom: 40px;}
 
   
     .location-address {display: flex; justify-content: space-between; align-items: center;
     }
+
+    .location-map{margin-bottom: 32px; width: 704px; height: 576px;}
     .location-main-address {
     font-family: 'DM Sans';
     font-style: normal;
