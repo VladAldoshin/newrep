@@ -24,6 +24,8 @@ body{
 }
 .link {text-decoration: none;}
 
+.list {list-style: none;}
+
 
 /* mobile style */
 @media screen and (max-width: 767px) {
@@ -38,7 +40,7 @@ body{
 
     .location{padding-top: 64px; padding-bottom: 64px;background: #D8D8D8;}
     
-    .location-title {
+.location-title {
 Font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
@@ -49,10 +51,15 @@ text-transform: uppercase;
 color: #121212;
 margin-bottom: 32px;}
 }
-.location-map{margin-bottom: 32px; width: 100%;}
+.location-map{margin-bottom: 32px;}
+
+.location-img{}
+
+
 
 .location-main-address {
 font-family: 'DM Sans';
+font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 1.33;
@@ -63,6 +70,7 @@ margin-bottom: 28px;
 }
 .location-text{
 font-family: 'DM Sans';
+font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.28;
@@ -75,7 +83,7 @@ margin-bottom: 12px;}
 font-family: 'DM Sans';
 font-weight: 400;
 font-size: 14px;
-line-height: 18px;
+line-height: 1.28;
 display: flex;
 align-items: center;
 letter-spacing: -0.02em;
@@ -83,12 +91,12 @@ color: #121212;}
 
 .location-tel:not(:last-child){margin-bottom: 4px;}
 
-.img-wrapper{display: flex; justify-content: flex-start;}
+
 
 /* Tablet style */
 @media screen and (min-width:768px)
 {
-    .section {
+    .section {background: #D8D8D8;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -98,7 +106,46 @@ color: #121212;}
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-    }   
+    }
+ 
+    .location-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #121212;}
+
+  
+    .location-address {display: flex; justify-content: space-between; align-items: center;
+    }
+    .location-main-address {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;}
+    
+   
+    .location-tel {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.33;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #121212;
+        
+    }
+ 
+
 }
 
 /* Desktop style */

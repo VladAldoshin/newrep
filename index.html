@@ -18,15 +18,23 @@
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <section class="location">
+    <section class="location section">
         <div class="container">
             <h2 class="location-title">location</h2>
-            <img class="location-map" src="./images/map_mobile1x.png" alt="map">
-<address class="location-address">
+            <picture>
+                <source srcset="./images/map_mobile1x.png 1x, ./images/map_mobile2x.png 2x" media="(max-width: 767px)"/>
+                <source srcset="./images/map_tablet1x.png 1x, ./images/map_tablet2x.png 2x" media="(min-width: 768px)"/>
+                <source srcset="./images/map_desctop1x.png 1x, ./images/map_desctop2x.png 2x" media="(min-width: 1200px)"/>
+                <img class="location-img" src="./images/map_mobile1x.png" alt="map">
+            </picture>
+            <address class="location-address">
     <p class="location-main-address">Ukraine, Poltava,<br/> St. Marshal Biryuzov, 15</p>
-    <p class="location-text">call us:</p>
-    <a class="location-tel link" href="tel:(095)5559533">(095) 555 95 33</a>
-    <a class="location-tel link" href="tel:(066)8491089">(066) 849 10 89</a>
+    <div> 
+     <p class="location-text">call us:</p>
+        <ul class="list">
+            <li><a class="location-tel link" href="tel:(095)5559533">(095) 555 95 33</a></li>
+            <li><a class="location-tel link" href="tel:(066)8491089">(066) 849 10 89</a></li>
+        </ul></div>
    </address>
         </div>
          </section>
