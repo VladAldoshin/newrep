@@ -1,0 +1,241 @@
+h1,
+h2,
+h3,
+h4,
+p {
+margin-top: 0;
+margin-bottom: 0;}
+  
+ul {
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;}
+  
+img {
+display: block;
+max-width: 100%;
+height: auto;}
+body{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: 121212;
+    background-color: F6F6F6;;
+}
+.link {text-decoration: none;}
+
+.list {list-style: none;}
+
+/* Modal Book a room */
+
+.book-a-room {
+position: fixed;
+width: 100%;
+height: 100%;
+background: #121212;
+border-radius: 2px;
+z-index: 777;
+padding: 14px
+}
+.close-btn {
+display: block;
+position: absolute;
+top: 14px;
+right: 14px;
+background-color: transparent; 
+border: 0; 
+padding: 0;
+}
+.close-btn-icon {width: 12px; height: 12px; fill: #F6F6F6;}
+
+.book-a-room-title {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 1.36;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+margin-top: 24px;
+margin-bottom: 40px;
+}
+
+.first-form-suptitle {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+margin-bottom: 18px;
+}
+.form-input {
+width: 287px;
+border: 0;
+border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+outline: none;
+background: #121212;
+margin-bottom: 8px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+}
+
+.form-select{
+width: 287px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+background: #121212;
+border: 0;
+outline: none;
+border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+margin-bottom: 8px;
+padding-bottom: 18px;
+}
+.first-form-text {
+display: block;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 1.5;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #D8D7D7;
+margin-bottom: 32px;}
+
+.book-a-room-btn {
+display: block;
+margin: 0 auto;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+border: 0.8px solid #F7F7F7;
+border-radius: 32px;
+background-color: transparent;
+padding: 14px 48px;
+}
+
+/* ======================Mobile==================== */
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+.book-a-room {
+position: fixed;
+width: 335px;
+height: 636px;
+background: #121212;
+border-radius: 2px;
+z-index: 777;
+padding: 14px
+}
+
+.close-btn {
+position: absolute;
+top: 14px;
+right: 24px;
+background-color: transparent; 
+border: 0; 
+padding: 0;
+    }
+}
+
+/* ======================Tablet======================== */
+
+@media screen and (min-width: 768px) {
+
+.book-a-room {
+position: fixed;
+width: 628px;
+height: 572px;
+background: #121212;
+border-radius: 2px;
+z-index: 777;
+padding: 24px 32px
+}
+
+.close-btn {
+position: absolute;
+top: 34px;
+right: 34px;
+background-color: transparent; 
+border: 0; 
+padding: 0;
+}
+
+.first-form-page{display: flex; flex-wrap: wrap; column-gap: 32px; row-gap: 40px;}
+
+.book-a-room-title {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 1.36;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+margin-top: 8px;
+margin-bottom: 60px;
+}
+
+.form-input {
+    width: 266px;
+    border: 0;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    outline: none;
+    background: #121212;
+    margin-bottom: 8px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    }
+    
+    .form-select{
+    width: 266px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    background: #121212;
+    border: 0;
+    outline: none;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    }
+
+    .first-form-text {
+     margin-bottom: 0;}
+
+     .book-a-room-btn {margin-top: 80px; margin-bottom: 60px;}
+        
+
+}
+
