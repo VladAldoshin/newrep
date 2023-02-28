@@ -26,12 +26,21 @@ body{
 
 .list {list-style: none;}
 
+.backdrop{
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #D8D7D7;
+}
 
 
-@media screen and (max-width: 479px) {
+
+@media screen and (max-width: 374px) {
 
 .prices-mw {
-position: fixed;
+position: absolute;
 width: 100%;
 height: 100%;
 background: #121212;
@@ -147,10 +156,13 @@ padding: 14px 48px;}
 
 /* =======================Mobile style=========================== */
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
 .prices-mw {
-position: fixed;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 width: 335px;
 height: 414px;
 background: #121212;
@@ -266,7 +278,10 @@ padding: 14px 48px;}
 @media screen and (min-width: 768px) {
 
 .prices-mw {
-position: fixed;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 width: 628px;
 height: 430px;
 background: #121212;
@@ -380,7 +395,7 @@ padding: 14px 133px;}
 
 /* ======================Desctop===================== */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
 .mw-button {transition: color 250ms linear;}
 .mw-button:is(:hover, :focus) {color: #121212; background: #FFFFFF;}
 }

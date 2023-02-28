@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Модалка 1</title>
+    <title>Modal1</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,45 +19,47 @@
 </head>
 <body>
     <!-- Modal Prices per room -->
-    <div class="prices-mw">
-        <button type="button" class="close-btn">
-            <svg class="close-btn-icon" width="28" height="28">
-                <use href="./images/sprite.svg#icon-close_modal"></use>
-            </svg>
-        </button>
-        <h2 class="prices-mw-title">Prices per room</h2>
-        <p class="prices-mw-suptitle">Double suite</p>
-        <div class="form-wrap"> 
+    <div class="backdrop">
+        <div class="prices-mw">
+            <button type="button" class="close-btn">
+                <svg class="close-btn-icon" width="28" height="28">
+                    <use href="./images/sprite.svg#icon-close_modal"></use>
+                </svg>
+            </button>
+            <h2 class="prices-mw-title">Prices per room</h2>
+            <p class="prices-mw-suptitle">Double suite</p>
+            <div class="form-wrap"> 
             <form class="first-form">
-        <select class="mw-select" name="numbers-of-nights">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        </select>
-        <span class="prices-mw-text">Number of nights</span>
-        </form>
-        <form class="seconf-form">
-        <select class="mw-select-second" name="check-in-date">
-        <option value="25/04/2023">25/04/2023</option>
-        <option value="26/04/2023">26/04/2023</option>
-        <option value="27/04/2023">27/04/2023</option>
-        <option value="28/04/2023">28/04/2023</option>
-        <option value="29/04/2023">29/04/2023</option>
-        <option value="30/04/2023">30/04/2023</option>
-        <option value="31/04/2023">31/04/2023</option>
-        </select>
-        <span class="prices-mw-text" >Check-in date</span>
-        </form>
-        <form class="third-form">
-        <input class="mw-input" type="number" name="price">
-        <span class="prices-mw-text">UAH</span>
-        </form>
+            <select class="mw-select" name="numbers-of-nights">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            </select>
+            <span class="prices-mw-text">Number of nights</span>
+            </form>
+            <form class="seconf-form">
+            <select class="mw-select-second" name="check-in-date">
+            <option value="25/04/2023">25/04/2023</option>
+            <option value="26/04/2023">26/04/2023</option>
+            <option value="27/04/2023">27/04/2023</option>
+            <option value="28/04/2023">28/04/2023</option>
+            <option value="29/04/2023">29/04/2023</option>
+            <option value="30/04/2023">30/04/2023</option>
+            <option value="31/04/2023">31/04/2023</option>
+            </select>
+            <span class="prices-mw-text" >Check-in date</span>
+            </form>
+            <form class="third-form">
+            <input class="mw-input" type="number" name="price">
+            <span class="prices-mw-text">UAH</span>
+            </form>
+            </div>
+            <button class="mw-button" type="submit">MAKE A RESERVATION</button>
         </div>
-        <button class="mw-button" type="submit">MAKE A RESERVATION</button>
 </div>
-</body>
+    </body>
 </html>
