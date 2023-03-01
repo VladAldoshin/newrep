@@ -39,12 +39,19 @@ background-color: #D8D7D7;
 
 .book-a-room {
 position: absolute;
-width: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 320px;
 height: 100vh;
 background: #121212;
 border-radius: 2px;
 z-index: 777;
-padding: 14px
+padding: 14px;
+overflow-y: auto;
+scroll-behavior: smooth;
+margin: 0 auto;
+
 }
 .close-btn {
 display: block;
@@ -154,11 +161,11 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 width: 335px;
-height: 636px;
+height: 100vh;
 background: #121212;
 border-radius: 2px;
-z-index: 777;
-padding: 14px
+z-index: 877;
+padding: 14px;
 }
 
 .close-btn {
@@ -185,7 +192,9 @@ height: 572px;
 background: #121212;
 border-radius: 2px;
 z-index: 777;
-padding: 24px 32px
+padding: 24px 32px;
+overflow-y: initial;
+
 }
 
 .close-btn {
@@ -253,7 +262,12 @@ margin-bottom: 60px;
     margin-bottom: 0;}
 
     .book-a-room-btn {margin-top: 80px; margin-bottom: 60px;}
-        
+    }
 
-}
+    /* =========================Desctop================== */
+
+    @media screen and (min-width: 1400px) {
+    .book-a-room-btn {transition: color 250ms linear;}
+    .book-a-room-btn:is(:hover, :focus) {color: #121212; background: #FFFFFF;}
+    }
 
